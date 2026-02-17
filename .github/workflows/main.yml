@@ -4,7 +4,7 @@
   jobs:
   build:
    name: Build the React app 
-  runs-on: ubuntu-latest
+  runs-on: ubuntu-latest 
   steps:
   uses: actions/checkout@v3
 - name: Setup node
@@ -14,13 +14,11 @@
   cache-dependency-path: './package-lock.json'
 - name: Build the React app
   uses: actions/checkout@v3
-  with: git@github.com:shreelata/repo.git
   run: npm run build
 - name: Deploy to GitHub Pages
   uses: gh-pages -d build
   publish-location: 'gh-pages'
   publish-source: 'build'
-  publish-repository: 'origin'
+  publish-repository: 'client'
   publish-branch: 'master'
-  publish-url: defaults:
-    'https://shreelata.github.io/client'
+   publish-url : 'https://shreelata.github.io/client'
