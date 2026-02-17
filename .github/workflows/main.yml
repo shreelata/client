@@ -20,7 +20,7 @@
   uses: gh-pages -d build
   publish-location: 'gh-pages'
   publish-source: 'build'
-  publish-repository: 'origin'
+  publish-repository: 'client'
   publish-branch: 'master'
   publish-url: defaults:
     'https://shreelata.github.io/client'
