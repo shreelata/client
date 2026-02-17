@@ -3,7 +3,7 @@
   on: pull_request
   jobs:
   build:
-   name: Build the React app
+   name: Build the React app 
   runs-on: ubuntu-latest
   steps:
   uses: actions/checkout@v3
