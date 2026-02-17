@@ -21,5 +21,5 @@
   publish-location: 'gh-pages'
   publish-source: 'build'
   publish-repository: 'origin'
-  publish-branch: 'master'
+  publish-branch: 'main'
  publish-url:'https://shreelata.github.io/client'
