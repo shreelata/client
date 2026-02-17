@@ -14,7 +14,7 @@
   cache-dependency-path: './package-lock.json'
 - name: Build the React app
   uses: actions/checkout@v3
-  run: npm run build
+  run: npm build
 - name: Deploy to GitHub Pages
   uses: gh-pages -d build
   publish-location: 'gh-pages'
