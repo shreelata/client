@@ -18,7 +18,6 @@
   run: npm run build
 - name: Deploy to GitHub Pages
   uses: gh-pages -d dist
-  with: publish-dir: dist
   publish-location: 'gh-pages'
   publish-source: 'dist'
 publish-repository: 'origin'
