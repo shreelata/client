@@ -22,5 +22,4 @@
   publish-source: 'build'
   publish-repository: 'client'
   publish-branch: 'master'
-  publish-url: defaults:
-    'https://shreelata.github.io/client'
+  publish-url:'https://shreelata.github.io/client'
