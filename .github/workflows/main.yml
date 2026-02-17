@@ -1,28 +1,28 @@
 - name: Deploy to GitHub Pages
-runs-on: ubuntu-latest
-on: pull_request
-jobs:
-build:
-name: Build the React app
-runs-on: ubuntu-latest
-steps:
+  runs-on: ubuntu-latest
+  on: pull_request
+  jobs:
+  build:
+   name: Build the React app
+  runs-on: ubuntu-latest
+  steps:
 - name: Checkout the repository
-uses: actions/checkout@v3
-with:  node-version: '20.x'
+  uses: actions/checkout@v3
+  with:  node-version: '20.x'
 - name: Install dependencies
-uses: actions/setup-node@v3
-with: node-version: '20.x'
-cache: 'npm'
-cache-dependency-path: './package-lock.json'
+  uses: actions/setup-node@v3
+  with: node-version: '20.x'
+  cache: 'npm'
+  cache-dependency-path: './package-lock.json'
 - name: Build the React app
-uses: actions/checkout@v3
-with: git@github.com:username/repo.git
-run: npm run build
+  uses: actions/checkout@v3
+  with: git@github.com:username/repo.git
+  run: npm run build
 - name: Deploy to GitHub Pages
-uses: gh-pages -d dist
-with: publish-dir: dist
-publish-location: 'gh-pages'
-publish-source: 'dist'
+  uses: gh-pages -d dist
+  with: publish-dir: dist
+  publish-location: 'gh-pages'
+  publish-source: 'dist'
 publish-repository: 'origin'
 publish-branch: 'main'
 publish-url: 'https://shreelata.github.io/client'
