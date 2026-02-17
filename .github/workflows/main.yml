@@ -1,4 +1,4 @@
-- name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 runs-on: ubuntu-latest
 on: pull_request
 jobs:
